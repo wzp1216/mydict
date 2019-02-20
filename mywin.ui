@@ -14,63 +14,12 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>0</y>
-      <width>531</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>2</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>万志平</string>
-     </attribute>
-     <widget class="QLCDNumber" name="lcdNumber">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>30</y>
-        <width>111</width>
-        <height>51</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>周利华</string>
-     </attribute>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>70</y>
-        <width>72</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>万周越</string>
-     </attribute>
-    </widget>
-   </widget>
    <widget class="QTextEdit" name="textEdit_dictout">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>200</y>
-      <width>531</width>
+      <x>510</x>
+      <y>80</y>
+      <width>551</width>
       <height>361</height>
      </rect>
     </property>
@@ -78,9 +27,9 @@
    <widget class="QLineEdit" name="Edit_inputword">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>150</y>
-      <width>280</width>
+      <x>510</x>
+      <y>30</y>
+      <width>291</width>
       <height>40</height>
      </rect>
     </property>
@@ -88,8 +37,8 @@
    <widget class="QPushButton" name="Btn_dict">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>150</y>
+      <x>820</x>
+      <y>30</y>
       <width>120</width>
       <height>40</height>
      </rect>
@@ -101,9 +50,9 @@
    <widget class="QPushButton" name="Btn_rand5words">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>330</x>
       <y>10</y>
-      <width>191</width>
+      <width>151</width>
       <height>40</height>
      </rect>
     </property>
@@ -114,8 +63,8 @@
    <widget class="QPushButton" name="Btn_add">
     <property name="geometry">
      <rect>
-      <x>960</x>
-      <y>150</y>
+      <x>950</x>
+      <y>30</y>
       <width>111</width>
       <height>40</height>
      </rect>
@@ -127,10 +76,10 @@
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>600</y>
-      <width>531</width>
-      <height>151</height>
+      <x>510</x>
+      <y>470</y>
+      <width>551</width>
+      <height>191</height>
      </rect>
     </property>
    </widget>
@@ -294,7 +243,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>加入学习</string>
+     <string>加入词库</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_2">
@@ -310,40 +259,40 @@
    <widget class="QCheckBox" name="checkBox_2">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>390</x>
       <y>200</y>
       <width>97</width>
       <height>40</height>
      </rect>
     </property>
     <property name="text">
-     <string>加入学习</string>
+     <string>加入词库</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>570</y>
+      <x>510</x>
+      <y>450</y>
       <width>72</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>学习曲线</string>
+     <string>您的学习曲线</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="checkBox_3">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>390</x>
       <y>340</y>
       <width>97</width>
       <height>40</height>
      </rect>
     </property>
     <property name="text">
-     <string>加入学习</string>
+     <string>加入词库</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_3">
@@ -359,14 +308,14 @@
    <widget class="QCheckBox" name="checkBox_4">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>390</x>
       <y>480</y>
       <width>97</width>
       <height>40</height>
      </rect>
     </property>
     <property name="text">
-     <string>加入学习</string>
+     <string>加入词库</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_4">
@@ -382,14 +331,14 @@
    <widget class="QCheckBox" name="checkBox_5">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>390</x>
       <y>620</y>
       <width>97</width>
       <height>40</height>
      </rect>
     </property>
     <property name="text">
-     <string>加入学习</string>
+     <string>加入词库</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_5">
@@ -402,6 +351,103 @@
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>670</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>您已学习单词数量：</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>690</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>请首先选择用户：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>121</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>万志平</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>周利华</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>万周越</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="Quitbutton">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>690</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Testbutton">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>690</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>学习测试</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -409,12 +455,75 @@
      <x>0</x>
      <y>0</y>
      <width>1100</width>
-     <height>24</height>
+     <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit_Q"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit_Q">
+   <property name="text">
+    <string>Quit(&amp;Q)</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionQuit_Q</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Quitbutton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1025</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

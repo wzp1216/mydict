@@ -1,3 +1,61 @@
+#coding=utf-8
+import pygame
+import random
+import time
+
+pygame.init()
+clock=pygame.time.Clock()
+white=(255,255,255)
+black=(0,0,0)
+green = (0,255,0)
+red = (255,0,0)
+yellow=(0,0,255)
+main_width = 1000
+main_height = 800
+gameDisplay=pygame.display.set_mode((main_width,main_height))
+pygame.display.set_caption("努力向前进")
+
+def byebye():
+    message_display("^_^! bye bye")
+    time.sleep(1)
+
+def message_display(text,x_pos=main_width*0.5,y_pos=main_height*0.5,color=red):
+    font = pygame.font.SysFont(None,25)
+    TextSurf = font.render(text, True, color)
+    TextRect = TextSurf.get_rect()
+    TextRect.center = ((x_pos),(y_pos))
+    gameDisplay.blit(TextSurf, TextRect)
+    pygame.display.update()
+
+def gameloop():
+    gamespeed=-5
+    down = 0
+    right=5
+    guan=1
+    pos_x=main_width/2
+    pos_y=main_height/2
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_UP) :
+                down = -75
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_DOWN) :
+                down = 75
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_RIGHT) :
+                right = 10
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_LEFT) :
+                right = -10
+        gameDisplay.fill(white)
+        pygame.draw.rect(gameDisplay,black,[pos_x,pos_y,20,20])
+        message_display("test",30,30)
+        pygame.display.update()
+        clock.tick(50)
+
+gameloop()
+
+'''
 import pygame
 import random
 import time
@@ -5,15 +63,10 @@ pygame.init()
 clock = pygame.time.Clock()
 white = (255,255,255)
 black = (0,0,0)
-green = (0,255,0)
-red = (255,0,0)
-main_width = 800
-main_height = 600
 gameDisplay = pygame.display.set_mode((main_width,main_height))
-pygame.display.set_caption("FlappyBlock")
+pygame.display.set_caption("努力向前进")
 
 def main_block(pos_x,pos_y,width,height):
-    pygame.draw.rect(gameDisplay,black,[pos_x,pos_y,width,height])
 
 def high_block(pos_x,width,height):
     pygame.draw.rect(gameDisplay,green,[pos_x,0,width,height])
@@ -33,20 +86,7 @@ def score_update(count):
     text = "Score: " + str(count)
     message_display(text,50,20,font,black)
 
-def crash():
-    message_display('You Crashed')
-    time.sleep(1)
-    game_loop()
 
-def text_objects(text,font,color):
-    textsurface = font.render(text, True, color)
-    return textsurface, textsurface.get_rect()
-
-def message_display(text,x_pos=main_width*0.5,y_pos=main_height*0.5,font=pygame.font.Font('freesansbold.ttf',115),color=red):
-    TextSurf, TextRect = text_objects(text, font, color)
-    TextRect.center = ((x_pos),(y_pos))
-    gameDisplay.blit(TextSurf, TextRect)
-    pygame.display.update()
 
 def game_loop():
     count = 0
@@ -54,7 +94,7 @@ def game_loop():
     pos_y = main_height*0.5
     gravity = 0
     fly_x = 2.5
-    speed = -4
+    speed = -11
 
 
     obj1 = {'x': 1000, 'width': 70, 'y': random.randrange(0,400), 'count':False,'l_y':main_height}
@@ -66,17 +106,6 @@ def game_loop():
 
     while True:
         gravity = 1
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                quit()
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_UP) :
-                gravity = -75
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_DOWN) :
-                gravity = 75
-
-        if pos_x + fly_x < main_width/3:
-            pos_x += fly_x
         else:
             pos_y += gravity
             for obj in objs:
@@ -93,12 +122,9 @@ def game_loop():
 
 
         gameDisplay.fill(white)
-
         for obj in objs:
             obj['l_y'] = create_obstruction(obj['x'],obj['y'],obj['width'])
         score_update(count)
-
-
 
         if pos_y + block_height >= main_height:
             pos_y = main_height - block_height
@@ -115,6 +141,7 @@ def game_loop():
 
         main_block(pos_x,pos_y,block_width,block_height)
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(50)
 
 game_loop()
+'''
