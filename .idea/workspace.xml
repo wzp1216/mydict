@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ee090a2-1039-4e55-8917-1f0612328a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mydict.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mydict.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydict.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mywin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mywin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mywin.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mywin.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiaopy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiaopy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,23 +171,30 @@
       <workItem from="1550400457750" duration="2294000" />
       <workItem from="1550541246217" duration="81000" />
       <workItem from="1550541416352" duration="5787000" />
-      <workItem from="1550658380609" duration="11143000" />
+      <workItem from="1550658380609" duration="11287000" />
     </task>
+    <task id="LOCAL-00001" summary="add a new dlg">
+      <created>1550673299651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550673299651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19305000" />
+    <option name="totallyTimeSpent" value="19449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="776" y="0" width="1151" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1420715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28915662" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28915662" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,6 +219,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mydict" />
     </ignored-roots>
+    <MESSAGE value="add a new dlg" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a new dlg" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mydict/main.py" />
